@@ -22,8 +22,8 @@ function loadPartial(id, file) {
     .catch(err => console.error(`Error loading ${file}:`, err));
 }
 
+// execute function when page loads
 document.addEventListener("DOMContentLoaded", () => {
-  const depth = location.pathname.includes("/pages/") ? "../" : "";
-  loadPartial("header", depth + "partials/header.html");
-  loadPartial("footer", depth + "partials/footer.html");
+  loadPartial("header", "partials/header.html");
+  loadPartial("footer", "partials/footer.html");
 });
