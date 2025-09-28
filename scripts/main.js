@@ -1,4 +1,5 @@
 // Inject partials into header/footer
+// this will allow me to avoid repeating code in multiple files
 function loadPartial(id, file) {
   fetch(file)
     .then(res => res.text())
