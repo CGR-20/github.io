@@ -24,6 +24,6 @@ function loadPartial(id, file) {
 
 // execute function when page loads
 document.addEventListener("DOMContentLoaded", () => {
-  loadPartial("header", "partials/header.html");
+  loadPartial("header", "partials/root_header.html");
   loadPartial("footer", "partials/footer.html");
 });
